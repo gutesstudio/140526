@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUTES – Edelstahlküchen</title>
+  <style>
+    /* Grundlayout */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e6e6e6; /* hellgrauer Hintergrund */
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      padding: 60px 40px 30px;
+      text-align: center;
+      letter-spacing: 0.08em;
+    }
+
+    header h1 {
+      font-size: 72px;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    /* Grid für Küchen-Bilder */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      flex-grow: 1;
+    }
+
+    .kitchen {
+      background-color: #f7f7f7;
+      border-radius: 6px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .kitchen:hover {
+      transform: scale(1.02);
+    }
+
+    .kitchen img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .kitchen h2 {
+      font-size: 20px;
+      padding: 15px 20px 5px;
+      font-weight: 400;
+    }
+
+    .kitchen p {
+      padding: 0 20px 20px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GUTES</h1>
+    <p>Edelstahlküchen – Präzision, Funktion, Form</p>
+  </header>
+
+  <section class="gallery">
+    <div class="kitchen">
+      <img src="[source.unsplash.com](https://source.unsplash.com/800x600/?stainless,kitchen,minimal)" alt="Edelstahlküche 1">
+      <h2>Serie 01</h2>
+      <p>Klare Linien und funktionale Schönheit – inspiriert von industriellem Design.</p>
+    </div>
+
+    <div class="kitchen">
+      <img src="[source.unsplash.com](https://source.unsplash.com/800x600/?modern,kitchen,steel)" alt="Edelstahlküche 2">
+      <h2>Serie 02</h2>
+      <p>Modulare Formensprache und feine Materialübergänge in gebürstetem Edelstahl.</p>
+    </div>
+
+    <div class="kitchen">
+      <img src="[source.unsplash.com](https://source.unsplash.com/800x600/?interior,stainless,design)" alt="Edelstahlküche 3">
+      <h2>Serie 03</h2>
+      <p>Reduktion auf das Wesentliche – Technik, Handwerk und Ruhe im Ausdruck.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 GUTES – Edelstahlküchen
+  </footer>
+
+</body>
+</html>
